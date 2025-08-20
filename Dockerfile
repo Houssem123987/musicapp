@@ -1,4 +1,4 @@
-FROM cirrusci/flutter:3.13.0
+FROM cirrusci/flutter:stable
 
 WORKDIR /app/simplejeux
 
