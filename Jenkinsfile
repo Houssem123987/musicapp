@@ -5,12 +5,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://gitlab.com/hfkih24/app-mobile-jenkins-pipeline-docker.git'
-                
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 bat "docker build -t %IMAGE_NAME%:latest ."
